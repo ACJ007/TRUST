@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      /* Center the container */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      /* Style the "Trust me" text */
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+      
+      /* Style the buttons */
+      button {
+        display: block;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+      }
+      
+      /* Style the "Yes" button */
+      #yes {
+        background-color: green;
+        color: white;
+        border: none;
+      }
+      
+      /* Style the "No" button */
+      #no {
+        background-color: red;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Trust me</h1>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+    
+    <script>
+      // Add event listeners to the buttons
+      document.getElementById("yes").addEventListener("click", function() {
+        window.location.href = "yes.html";
+      });
+      
+      document.getElementById("no").addEventListener("click", function() {
+        window.location.href = "no.html";
+      });
+    </script>
+  </body>
+</html>
